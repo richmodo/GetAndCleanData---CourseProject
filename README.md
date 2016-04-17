@@ -16,11 +16,11 @@ The data set is taken from the following location:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##Data Set Summary
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING UPSTAIRS, WALKNG DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data
 
-The output of script produces a TXT file which calculates t mean of all 'feature' variable by subject & activity.  The table is a data frame of dimension (180 x 68)
+The output of script produces a TXT file which calculates t mean of all 'feature' variable by subject & activity.  The table is a data frame of dimension (180 x 81)
 
-Here is a subset of the summary data showing the first four columns (64 feature variables in total):
+Here is a subset of the summary data showing the first four columns (79 feature variables in total):
 
 | subject | activity     | tBodyAccmeanX | tBodyAccmeanY |
 |---------|--------------|---------------|---------------|
