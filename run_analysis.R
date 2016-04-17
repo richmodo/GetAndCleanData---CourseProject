@@ -89,7 +89,9 @@ df_all_data <- rbind(df_test_data, df_train_data)
 # associated with the variables of interest
 # if duplicates are not removed the select function will result in errors
 filtered_data <- df_all_data[ !duplicated(names(df_all_data)) ]
-filtered_data <- select(filtered_data, activity, subject, matches("(mean|std)\\(.*\\)"))
+#filtered_data <- select(filtered_data, activity, subject, matches("(mean|std)\\(.*\\)"))
+filtered_data <- select(filtered_data, activity, subject, matches("(mean|std)"))
+filtered_data <- select(filtered_data, everything(), -starts_with("angle"))
 
 # rename column names to make more readable
 colnames(filtered_data) <- gsub("[()-]", "", colnames(filtered_data))
